@@ -32,3 +32,1436 @@ snippet fori
 	for (int ${2:i} = 0; $2 < ${1:count}; $2${3:++}) {
 		${4:/* code */}
 	}
+
+# oit_script
+snippet dbg
+	dbg(${1:S});
+	$2
+snippet dbg_clear
+	dbg_clear()
+	$1
+snippet msg
+	msg(${1:S});
+	$2
+snippet tip
+	tip(${1:S});
+	$2
+snippet warn
+	warn(${1:S});
+	$2
+snippet confirm
+	confirm(${1:S});
+	$2
+snippet log_all_para
+	log_all_para()
+	$1
+snippet run_line
+	run_line(${1:S});
+	$2
+snippet dt_get_name
+	dt_get_name(${1:S}, ${2:S});
+	$3
+snippet dt_get_code
+	dt_get_code(${1:S}, ${2:S});
+	$3
+snippet dt_get_ext
+	dt_get_ext(${1:S}, ${2:S}, ${3:S});
+	$4
+snippet dt_define
+	dt_define(${1:S}, ${2:S});
+	$3
+snippet dt_define_std
+	dt_define_std(${1:S});
+	$2
+snippet dt_add_code
+	dt_add_code(${1:S}, ${2:S}, ${3:S});
+	$4
+snippet dt_refresh
+	dt_refresh(${1:S});
+	$2
+snippet dt_refresh_key
+	dt_refresh_key(${1:S}, ${2:S});
+	$3
+snippet dt_show_data
+	dt_show_data(${1:S}, ${2:S});
+	$3
+snippet dt_select
+	dt_select(${1:S}, ${2:S});
+	$3
+snippet dt_multi_select
+	dt_multi_select(${1:S}, ${2:S});
+	$3
+snippet fen_to_yuan
+	fen_to_yuan(${1:S});
+	$2
+snippet one_cap
+	one_cap(${1:S}, ${2:I});
+	$3
+snippet one_digit
+	one_digit(${1:S}, ${2:I});
+	$3
+snippet one_digit_ext
+	one_digit_ext(${1:S}, ${2:I}, ${3:S});
+	$4
+snippet money_cap
+	money_cap(${1:S});
+	$2
+snippet num_skip_0
+	num_skip_0(${1:S});
+	$2
+snippet num_dec_cut
+	num_dec_cut(${1:S}, ${2:I});
+	$3
+snippet num_2_grp
+	num_2_grp(${1:S});
+	$2
+snippet num_to_cap
+	num_to_cap(${1:S});
+	$2
+snippet num_trim
+	num_trim(${1:S});
+	$2
+snippet fmt_date
+	fmt_date(${1:S}, ${2:S});
+	$3
+snippet fmt_time
+	fmt_time(${1:S}, ${2:S});
+	$3
+snippet get_cur_date
+	get_cur_date()
+	$1
+snippet get_cur_date_std
+	get_cur_date_std()
+	$1
+snippet get_cur_fmt_date
+	get_cur_fmt_date(${1:S});
+	$2
+snippet get_cur_time
+	get_cur_time()
+	$1
+snippet get_cur_time_std
+	get_cur_time_std()
+	$1
+snippet get_cur_fmt_time
+	get_cur_fmt_time(${1:S});
+	$2
+snippet get_cur_month
+	get_cur_month()
+	$1
+snippet get_cur_year
+	get_cur_year()
+	$1
+snippet get_month_days
+	get_month_days(${1:S});
+	$2
+snippet get_year_days
+	get_year_days(${1:S});
+	$2
+snippet date_to_second
+	date_to_second(${1:S});
+	$2
+snippet time_to_second
+	time_to_second(${1:S});
+	$2
+snippet get_last_month
+	get_last_month(${1:S});
+	$2
+snippet get_last_year
+	get_last_year(${1:S});
+	$2
+snippet get_next_date
+	get_next_date(${1:S});
+	$2
+snippet get_last_date
+	get_last_date(${1:S});
+	$2
+snippet get_month_between
+	get_month_between(${1:S}, ${2:S});
+	$3
+snippet get_day_between
+	get_day_between(${1:S}, ${2:S});
+	$3
+snippet get_week_id
+	get_week_id(${1:S});
+	$2
+snippet get_week_id_num
+	get_week_id_num(${1:S}, ${2:S}, ${3:I});
+	$4
+snippet is_date_valid
+	is_date_valid(${1:S});
+	$2
+snippet std_inp_date
+	std_inp_date(${1:S});
+	$2
+snippet std_inp_time
+	std_inp_time(${1:S});
+	$2
+snippet date_add
+	date_add(${1:S}, ${2:I});
+	$3
+snippet month_add
+	month_add(${1:S}, ${2:I});
+	$3
+snippet date_nl
+	date_nl(${1:S});
+	$2
+snippet date_gl
+	date_gl(${1:S});
+	$2
+snippet date_pick_year
+	date_pick_year(${1:S});
+	$2
+snippet date_pick_month
+	date_pick_month(${1:S});
+	$2
+snippet date_pick_day
+	date_pick_day(${1:S});
+	$2
+snippet year_to_acc_cap
+	year_to_acc_cap(${1:I});
+	$2
+snippet month_to_acc_cap
+	month_to_acc_cap(${1:I});
+	$2
+snippet day_to_acc_cap
+	day_to_acc_cap(${1:I});
+	$2
+snippet date_to_acc_cap
+	date_to_acc_cap(${1:S});
+	$2
+snippet nl
+	nl()
+	$1
+snippet strlen
+	strlen(${1:S});
+	$2
+snippet strcmp
+	strcmp(${1:S}, ${2:S});
+	$3
+snippet str_replace
+	str_replace(${1:S}, ${2:S}, ${3:S});
+	$4
+snippet strncmp
+	strncmp(${1:S}, ${2:S}, ${3:I});
+	$4
+snippet str_get_sub
+	str_get_sub(${1:S}, ${2:I}, ${3:I});
+	$4
+snippet str_pos
+	str_pos(${1:S}, ${2:S});
+	$3
+snippet str_add_as_num
+	str_add_as_num(${1:S}, ${2:S});
+	$3
+snippet str_sub_as_num
+	str_sub_as_num(${1:S}, ${2:S});
+	$3
+snippet str_std_num
+	str_std_num(${1:S}, ${2:I});
+	$3
+snippet lower
+	lower(${1:S});
+	$2
+snippet upper
+	upper(${1:S});
+	$2
+snippet str_cut
+	str_cut(${1:S}, ${2:I});
+	$3
+snippet to_int
+	to_int(${1:S});
+	$2
+snippet to_float
+	to_float(${1:S});
+	$2
+snippet fmt_float
+	fmt_float(${1:F}, ${2:S});
+	$3
+snippet fmt_int
+	fmt_int(${1:I}, ${2:S});
+	$3
+snippet mod
+	mod(${1:I}, ${2:I});
+	$3
+snippet str_to_num_str
+	str_to_num_str(${1:S});
+	$2
+snippet str_lst_to_sql_lst
+	str_lst_to_sql_lst(${1:S});
+	$2
+snippet str_lst_to_db
+	str_lst_to_db(${1:S});
+	$2
+snippet call_str
+	call_str(${1:S});
+	$2
+snippet system
+	system(${1:S});
+	$2
+snippet shell
+	shell(${1:S});
+	$2
+snippet shell_ext
+	shell_ext(${1:S}, ${2:S});
+	$3
+snippet process
+	process(${1:S}, ${2:S});
+	$3
+snippet get_pub_temp_file
+	get_pub_temp_file(${1:S});
+	$2
+snippet call_user_dll
+	call_user_dll(${1:S}, ${2:S}, ${3:S});
+	$4
+snippet get_user_dll_result
+	get_user_dll_result()
+	$1
+snippet call_dll_func
+	call_dll_func(${1:S}, ${2:S});
+	$3
+snippet call_func
+	call_func(${1:S});
+	$2
+snippet call_html_win
+	call_html_win(${1:S});
+	$2
+snippet exit
+	exit()
+	$1
+snippet get_home_path
+	get_home_path()
+	$1
+snippet get_ip
+	get_ip()
+	$1
+snippet get_host_name
+	get_host_name()
+	$1
+snippet write_port
+	write_port(${1:S}, ${2:S});
+	$3
+snippet check_thr_err
+	check_thr_err()
+	$1
+snippet str_trim_right
+	str_trim_right(${1:S});
+	$2
+snippet str_trim_left
+	str_trim_left(${1:S});
+	$2
+snippet str_trim
+	str_trim(${1:S});
+	$2
+snippet file_unlink
+	file_unlink(${1:S});
+	$2
+snippet file_write
+	file_write(${1:S}, ${2:S});
+	$3
+snippet select_file_to_save
+	select_file_to_save(${1:S}, ${2:S});
+	$3
+snippet select_file_to_open
+	select_file_to_open(${1:S}, ${2:S});
+	$3
+snippet sleep
+	sleep(${1:I});
+	$2
+snippet usleep
+	usleep(${1:I});
+	$2
+snippet gui_list_inp_all
+	gui_list_inp_all()
+	$1
+snippet gui_list_inp
+	gui_list_inp(${1:S});
+	$2
+snippet gui_list_all
+	gui_list_all()
+	$1
+snippet gui_list
+	gui_list(${1:S});
+	$2
+snippet gui_hide
+	gui_hide(${1:S});
+	$2
+snippet gui_show
+	gui_show(${1:S});
+	$2
+snippet gui_focus
+	gui_focus(${1:S});
+	$2
+snippet gui_disable
+	gui_disable(${1:S});
+	$2
+snippet gui_enable
+	gui_enable(${1:S});
+	$2
+snippet gui_disable_edit
+	gui_disable_edit(${1:S});
+	$2
+snippet gui_enable_edit
+	gui_enable_edit(${1:S});
+	$2
+snippet gui_set_val
+	gui_set_val(${1:S}, ${2:S});
+	$3
+snippet gui_get_val
+	gui_get_val(${1:S});
+	$2
+snippet gui_comb_to_db
+	gui_comb_to_db(${1:S});
+	$2
+snippet gui_db_to_comb
+	gui_db_to_comb(${1:S});
+	$2
+snippet gui_set_text
+	gui_set_text(${1:S}, ${2:S});
+	$3
+snippet gui_get_text
+	gui_get_text(${1:S});
+	$2
+snippet gui_set_hint
+	gui_set_hint(${1:S}, ${2:S});
+	$3
+snippet gui_replace_str
+	gui_replace_str(${1:S}, ${2:S}, ${3:S});
+	$4
+snippet gui_set_tabsheet_pos
+	gui_set_tabsheet_pos(${1:S}, ${2:I});
+	$3
+snippet gui_set_x
+	gui_set_x(${1:S}, ${2:I});
+	$3
+snippet gui_set_y
+	gui_set_y(${1:S}, ${2:I});
+	$3
+snippet gui_set_w
+	gui_set_w(${1:S}, ${2:I});
+	$3
+snippet gui_set_h
+	gui_set_h(${1:S}, ${2:I});
+	$3
+snippet gui_set_font_size
+	gui_set_font_size(${1:S}, ${2:I});
+	$3
+snippet gui_set_font_name
+	gui_set_font_name(${1:S}, ${2:S});
+	$3
+snippet gui_set_font_color
+	gui_set_font_color(${1:S}, ${2:I});
+	$3
+snippet gui_set_bg_color
+	gui_set_bg_color(${1:S}, ${2:I});
+	$3
+snippet gui_get_x
+	gui_get_x(${1:S});
+	$2
+snippet gui_get_y
+	gui_get_y(${1:S});
+	$2
+snippet gui_get_w
+	gui_get_w(${1:S});
+	$2
+snippet gui_get_h
+	gui_get_h(${1:S});
+	$2
+snippet gui_set_parent
+	gui_set_parent(${1:S}, ${2:S});
+	$3
+snippet gui_create_label
+	gui_create_label(${1:S}, ${2:S}, ${3:I}, ${4:I}, ${5:S});
+	$6
+snippet gui_create_edit
+	gui_create_edit(${1:S}, ${2:S}, ${3:I}, ${4:I}, ${5:I}, ${6:I});
+	$7
+snippet gui_create_combobox
+	gui_create_combobox(${1:S}, ${2:S}, ${3:I}, ${4:I}, ${5:I}, ${6:I}, ${7:S});
+	$8
+snippet gui_create_line_w
+	gui_create_line_w(${1:S}, ${2:S}, ${3:I}, ${4:I}, ${5:I});
+	$6
+snippet gui_create_line_h
+	gui_create_line_h(${1:S}, ${2:S}, ${3:I}, ${4:I}, ${5:I});
+	$6
+snippet gui_create_button
+	gui_create_button(${1:S}, ${2:S}, ${3:I}, ${4:I}, ${5:I}, ${6:I}, ${7:S});
+	$8
+snippet gui_create_speedbutton
+	gui_create_speedbutton(${1:S}, ${2:S}, ${3:I}, ${4:I}, ${5:I}, ${6:I}, ${7:S});
+	$8
+snippet gui_tree_node_erase
+	gui_tree_node_erase(${1:S}, ${2:S});
+	$3
+snippet gui_tree_node_rename
+	gui_tree_node_rename(${1:S}, ${2:S}, ${3:S});
+	$4
+snippet gui_bind_click_cmd
+	gui_bind_click_cmd(${1:S}, ${2:S});
+	$3
+snippet gui_trigger_change
+	gui_trigger_change(${1:S});
+	$2
+snippet gui_trigger_click
+	gui_trigger_click(${1:S});
+	$2
+snippet gui_trigger_exit
+	gui_trigger_exit(${1:S});
+	$2
+snippet get_win_id
+	get_win_id()
+	$1
+snippet change_to_win
+	change_to_win(${1:S});
+	$2
+snippet progress_set_text
+	progress_set_text(${1:S}, ${2:S});
+	$3
+snippet progress_set_max
+	progress_set_max(${1:I});
+	$2
+snippet progress_set_val
+	progress_set_val(${1:I});
+	$2
+snippet progress_hide
+	progress_hide()
+	$1
+snippet grid_list_col
+	grid_list_col(${1:S});
+	$2
+snippet grid_hide_col
+	grid_hide_col(${1:S}, ${2:S});
+	$3
+snippet grid_set_col_width
+	grid_set_col_width(${1:S}, ${2:S}, ${3:I});
+	$4
+snippet grid_get_col_width
+	grid_get_col_width(${1:S}, ${2:S});
+	$3
+snippet grid_set_row_height
+	grid_set_row_height(${1:S}, ${2:I}, ${3:I});
+	$4
+snippet grid_get_row_height
+	grid_get_row_height(${1:S}, ${2:I});
+	$3
+snippet grid_set_col_pos
+	grid_set_col_pos(${1:S}, ${2:S}, ${3:I});
+	$4
+snippet grid_get_col_pos
+	grid_get_col_pos(${1:S}, ${2:S});
+	$3
+snippet grid_add_row_num
+	grid_add_row_num(${1:S}, ${2:I});
+	$3
+snippet grid_insert_before
+	grid_insert_before(${1:S}, ${2:I});
+	$3
+snippet grid_del_row
+	grid_del_row(${1:S}, ${2:I});
+	$3
+snippet grid_clear_row
+	grid_clear_row(${1:S}, ${2:I});
+	$3
+snippet grid_add_col_str
+	grid_add_col_str(${1:S}, ${2:S}, ${3:S});
+	$4
+snippet grid_add_col_num
+	grid_add_col_num(${1:S}, ${2:S}, ${3:S});
+	$4
+snippet grid_add_col
+	grid_add_col(${1:S}, ${2:S}, ${3:S}, ${4:I});
+	$5
+snippet grid_row_num
+	grid_row_num(${1:S});
+	$2
+snippet grid_col_num
+	grid_col_num(${1:S});
+	$2
+snippet grid_cur_row
+	grid_cur_row(${1:S});
+	$2
+snippet grid_cur_col
+	grid_cur_col(${1:S}, ${2:I});
+	$3
+snippet grid_set_cur_row
+	grid_set_cur_row(${1:S}, ${2:I});
+	$3
+snippet grid_set_cur_col
+	grid_set_cur_col(${1:S});
+	$2
+snippet grid_set_v
+	grid_set_v(${1:S}, ${2:S}, ${3:I}, ${4:S});
+	$5
+snippet grid_get_v
+	grid_get_v(${1:S}, ${2:S}, ${3:I});
+	$4
+snippet grid_get_col_name
+	grid_get_col_name(${1:S}, ${2:I});
+	$3
+snippet grid_mark_sum
+	grid_mark_sum(${1:S}, ${2:S});
+	$3
+snippet grid_unmark_sum
+	grid_unmark_sum(${1:S}, ${2:S});
+	$3
+snippet grid_get_col_sum
+	grid_get_col_sum(${1:S}, ${2:S});
+	$3
+snippet grid_enable_sort
+	grid_enable_sort(${1:S});
+	$2
+snippet grid_disable_sort
+	grid_disable_sort(${1:S});
+	$2
+snippet grid_get_sort_flag
+	grid_get_sort_flag(${1:S});
+	$2
+snippet grid_set_col_number
+	grid_set_col_number(${1:S}, ${2:S}, ${3:I});
+	$4
+snippet grid_set_col_string
+	grid_set_col_string(${1:S}, ${2:S});
+	$3
+snippet grid_sort
+	grid_sort(${1:S}, ${2:S});
+	$3
+snippet grid_mark_readonly
+	grid_mark_readonly(${1:S}, ${2:S});
+	$3
+snippet grid_unmark_readonly
+	grid_unmark_readonly(${1:S}, ${2:S});
+	$3
+snippet grid_set_col_align_left
+	grid_set_col_align_left(${1:S}, ${2:S});
+	$3
+snippet grid_set_col_align_right
+	grid_set_col_align_right(${1:S}, ${2:S});
+	$3
+snippet grid_set_col_align_middle
+	grid_set_col_align_middle(${1:S}, ${2:S});
+	$3
+snippet grid_set_col_picklist
+	grid_set_col_picklist(${1:S}, ${2:S}, ${3:S});
+	$4
+snippet grid_set_col_picklist_dict
+	grid_set_col_picklist_dict(${1:S}, ${2:S}, ${3:S});
+	$4
+snippet grid_set_row_color
+	grid_set_row_color(${1:S}, ${2:I}, ${3:I});
+	$4
+snippet grid_set_col_color
+	grid_set_col_color(${1:S}, ${2:S}, ${3:I});
+	$4
+snippet grid_set_cell_color
+	grid_set_cell_color(${1:S}, ${2:S}, ${3:I}, ${4:I});
+	$5
+snippet grid_set_row_bgcolor
+	grid_set_row_bgcolor(${1:S}, ${2:I}, ${3:I});
+	$4
+snippet grid_set_col_bgcolor
+	grid_set_col_bgcolor(${1:S}, ${2:S}, ${3:I});
+	$4
+snippet grid_set_cell_bgcolor
+	grid_set_cell_bgcolor(${1:S}, ${2:S}, ${3:I}, ${4:I});
+	$5
+snippet grid_color_clear
+	grid_color_clear(${1:S});
+	$2
+snippet grid_seek
+	grid_seek(${1:S}, ${2:S}, ${3:S});
+	$4
+snippet grid_seek_from
+	grid_seek_from(${1:S}, ${2:I}, ${3:S}, ${4:S});
+	$5
+snippet grid_trigger_change
+	grid_trigger_change(${1:S}, ${2:S}, ${3:I});
+	$4
+snippet grid_set_fmt
+	grid_set_fmt(${1:S}, ${2:S});
+	$3
+snippet inp_clear
+	inp_clear()
+	$1
+snippet inp_get_val
+	inp_get_val(${1:S});
+	$2
+snippet inp_set_val
+	inp_set_val(${1:S}, ${2:S});
+	$3
+snippet inp_def_dict
+	inp_def_dict(${1:S}, ${2:S}, ${3:S});
+	$4
+snippet inp_def_string
+	inp_def_string(${1:S}, ${2:S});
+	$3
+snippet inp_def_date
+	inp_def_date(${1:S}, ${2:S});
+	$3
+snippet inp_def_month
+	inp_def_month(${1:S}, ${2:S});
+	$3
+snippet inp_def_int
+	inp_def_int(${1:S}, ${2:S});
+	$3
+snippet inp_def_dict_multi
+	inp_def_dict_multi(${1:S}, ${2:S}, ${3:S});
+	$4
+snippet inp_def_dict_multi_set
+	inp_def_dict_multi_set(${1:S}, ${2:S}, ${3:S});
+	$4
+snippet inp_para
+	inp_para()
+	$1
+snippet inp_para_set_title
+	inp_para_set_title(${1:S});
+	$2
+snippet inp_para_set_csp
+	inp_para_set_csp(${1:S});
+	$2
+snippet para_set
+	para_set(${1:S}, ${2:S});
+	$3
+snippet para_get
+	para_get(${1:S});
+	$2
+snippet para_defined
+	para_defined(${1:S});
+	$2
+snippet user_para_set
+	user_para_set(${1:S}, ${2:S});
+	$3
+snippet user_para_get
+	user_para_get(${1:S});
+	$2
+snippet user_para_defined
+	user_para_defined(${1:S});
+	$2
+snippet user_db_para_save
+	user_db_para_save(${1:S}, ${2:S});
+	$3
+snippet user_db_para_get
+	user_db_para_get(${1:S});
+	$2
+snippet pub_para_get
+	pub_para_get(${1:S});
+	$2
+snippet pub_para_defined
+	pub_para_defined(${1:S});
+	$2
+snippet xls_open_book
+	xls_open_book(${1:S});
+	$2
+snippet xls_create_book
+	xls_create_book(${1:S});
+	$2
+snippet xls_save_to
+	xls_save_to(${1:S});
+	$2
+snippet xls_save
+	xls_save(${1:S});
+	$2
+snippet xls_close_book
+	xls_close_book()
+	$1
+snippet xls_get_sheet_num
+	xls_get_sheet_num()
+	$1
+snippet xls_create_sheet
+	xls_create_sheet()
+	$1
+snippet xls_select_sheet_by_title
+	xls_select_sheet_by_title(${1:S});
+	$2
+snippet xls_select_sheet_by_id
+	xls_select_sheet_by_id(${1:I});
+	$2
+snippet xls_select_sheet_by_id_ext
+	xls_select_sheet_by_id_ext(${1:I});
+	$2
+snippet xls_delete_sheet
+	xls_delete_sheet()
+	$1
+snippet xls_get_sheet_title
+	xls_get_sheet_title()
+	$1
+snippet xls_set_sheet_title
+	xls_set_sheet_title(${1:S});
+	$2
+snippet xls_sheet_to_dbio
+	xls_sheet_to_dbio()
+	$1
+snippet xls_dbio_to_sheet
+	xls_dbio_to_sheet()
+	$1
+snippet xls_write_cell
+	xls_write_cell(${1:I}, ${2:I}, ${3:S});
+	$4
+snippet xls_read_cell
+	xls_read_cell(${1:I}, ${2:I});
+	$3
+snippet xls_set_col_width
+	xls_set_col_width(${1:I}, ${2:I});
+	$3
+snippet xls_get_col_width
+	xls_get_col_width(${1:I});
+	$2
+snippet xls_set_row_height
+	xls_set_row_height(${1:I}, ${2:I});
+	$3
+snippet xls_get_row_height
+	xls_get_row_height(${1:I});
+	$2
+snippet xls_delete_row
+	xls_delete_row(${1:I});
+	$2
+snippet xls_delete_col
+	xls_delete_col(${1:I});
+	$2
+snippet xls_insert_row
+	xls_insert_row(${1:I});
+	$2
+snippet xls_insert_col
+	xls_insert_col(${1:I});
+	$2
+snippet xls_merge_cell
+	xls_merge_cell(${1:I}, ${2:I}, ${3:I}, ${4:I});
+	$5
+snippet xls_add_pict_file
+	xls_add_pict_file(${1:I}, ${2:I}, ${3:S}, ${4:I}, ${5:I});
+	$6
+snippet v_mark_sum
+	v_mark_sum(${1:S});
+	$2
+snippet v_mark_col_readonly
+	v_mark_col_readonly(${1:S}, ${2:I});
+	$3
+snippet v_set_print_format_id
+	v_set_print_format_id(${1:S});
+	$2
+snippet v_print_with_fmt
+	v_print_with_fmt(${1:S});
+	$2
+snippet v_print_to
+	v_print_to(${1:S}, ${2:S});
+	$3
+snippet vr_add_res
+	vr_add_res(${1:S}, ${2:S});
+	$3
+snippet vr_add_res_ext
+	vr_add_res_ext(${1:S}, ${2:S}, ${3:S});
+	$4
+snippet vr_set_price_group
+	vr_set_price_group(${1:S});
+	$2
+snippet vr_init_main_res_ui_pos
+	vr_init_main_res_ui_pos()
+	$1
+snippet attr_get_val
+	attr_get_val(${1:S});
+	$2
+snippet attr_set_val
+	attr_set_val(${1:S}, ${2:S});
+	$3
+snippet v_show_user_menu
+	v_show_user_menu(${1:I}, ${2:S});
+	$3
+snippet v_hide_user_menu
+	v_hide_user_menu(${1:I});
+	$2
+snippet gen_voucher_no
+	gen_voucher_no(${1:S}, ${2:S});
+	$3
+snippet menu_list_item
+	menu_list_item()
+	$1
+snippet menu_hide_item
+	menu_hide_item(${1:S});
+	$2
+snippet menu_show_item
+	menu_show_item(${1:S});
+	$2
+snippet menu_disable_item
+	menu_disable_item(${1:S});
+	$2
+snippet menu_enable_item
+	menu_enable_item(${1:S});
+	$2
+snippet menu_set_text
+	menu_set_text(${1:S}, ${2:S});
+	$3
+snippet menu_move_item
+	menu_move_item(${1:S}, ${2:S}, ${3:I});
+	$4
+snippet menu_add_exe
+	menu_add_exe(${1:S}, ${2:I}, ${3:S}, ${4:S}, ${5:S});
+	$6
+snippet menu_add_dll
+	menu_add_dll(${1:S}, ${2:I}, ${3:S}, ${4:S}, ${5:S}, ${6:S});
+	$7
+snippet menu_add_call_str
+	menu_add_call_str(${1:S}, ${2:I}, ${3:S}, ${4:S}, ${5:S});
+	$6
+snippet menu_add_func
+	menu_add_func(${1:S}, ${2:I}, ${3:S}, ${4:S}, ${5:S});
+	$6
+snippet menu_add_csp
+	menu_add_csp(${1:S}, ${2:I}, ${3:S}, ${4:S}, ${5:S});
+	$6
+snippet menu_add_file
+	menu_add_file(${1:S}, ${2:I}, ${3:S}, ${4:S}, ${5:S});
+	$6
+snippet menu_set_hot_key
+	menu_set_hot_key(${1:S}, ${2:S}, ${3:I}, ${4:I});
+	$5
+snippet menu_set_hint
+	menu_set_hint(${1:S}, ${2:S});
+	$3
+snippet menu_trigger_click
+	menu_trigger_click(${1:S});
+	$2
+snippet menu_use
+	menu_use(${1:S});
+	$2
+snippet menu_list
+	menu_list()
+	$1
+snippet print_get_cp_sum
+	print_get_cp_sum(${1:S});
+	$2
+snippet print_get_sum
+	print_get_sum(${1:S});
+	$2
+snippet print_change_paper_at_row
+	print_change_paper_at_row(${1:I});
+	$2
+snippet get_pub_pict
+	get_pub_pict(${1:S});
+	$2
+snippet select_printer
+	select_printer(${1:S});
+	$2
+snippet get_printer_name
+	get_printer_name()
+	$1
+snippet printer_set_paper_size
+	printer_set_paper_size(${1:I}, ${2:I});
+	$3
+snippet printer_set_paper_size_ext
+	printer_set_paper_size_ext(${1:I}, ${2:I}, ${3:I});
+	$4
+snippet printer_set_paper_id_ext
+	printer_set_paper_id_ext(${1:I}, ${2:I});
+	$3
+snippet printer_set_paper_id
+	printer_set_paper_id(${1:I});
+	$2
+snippet db_run
+	db_run(${1:S});
+	$2
+snippet db_run_query
+	db_run_query(${1:S});
+	$2
+snippet db_run_process
+	db_run_process(${1:S});
+	$2
+snippet db_get_sequence
+	db_get_sequence(${1:S});
+	$2
+snippet db_go_head
+	db_go_head()
+	$1
+snippet db_next
+	db_next()
+	$1
+snippet db_go_row
+	db_go_row(${1:I});
+	$2
+snippet db_row_count
+	db_row_count()
+	$1
+snippet db_field_count
+	db_field_count()
+	$1
+snippet db_res
+	db_res(${1:I});
+	$2
+snippet db_res_ext
+	db_res_ext(${1:S});
+	$2
+snippet db_row_id
+	db_row_id()
+	$1
+snippet db_swap_row
+	db_swap_row(${1:I}, ${2:I});
+	$3
+snippet db_add_row
+	db_add_row()
+	$1
+snippet db_insert_before
+	db_insert_before(${1:I});
+	$2
+snippet db_del_row
+	db_del_row()
+	$1
+snippet db_set_value
+	db_set_value(${1:I}, ${2:S});
+	$3
+snippet db_set_value_ext
+	db_set_value_ext(${1:S}, ${2:S});
+	$3
+snippet db_drop_field
+	db_drop_field(${1:S});
+	$2
+snippet db_add_field
+	db_add_field(${1:S});
+	$2
+snippet db_get_field_id
+	db_get_field_id(${1:S});
+	$2
+snippet db_map
+	db_map(${1:S}, ${2:S}, ${3:S});
+	$4
+snippet db_set_main_sort_id
+	db_set_main_sort_id(${1:I});
+	$2
+snippet db_add_sort_id
+	db_add_sort_id(${1:I});
+	$2
+snippet db_sort
+	db_sort()
+	$1
+snippet db_sort_ext
+	db_sort_ext(${1:S});
+	$2
+snippet db_have_error
+	db_have_error()
+	$1
+snippet db_field_name
+	db_field_name(${1:I});
+	$2
+snippet db_set_table_name
+	db_set_table_name(${1:S});
+	$2
+snippet db_set_field_count
+	db_set_field_count(${1:I});
+	$2
+snippet db_set_field_name
+	db_set_field_name(${1:I}, ${2:S});
+	$3
+snippet db_set_field_type
+	db_set_field_type(${1:I}, ${2:S});
+	$3
+snippet db_set_field_type_s
+	db_set_field_type_s(${1:S}, ${2:S});
+	$3
+snippet db_set_field_caption
+	db_set_field_caption(${1:I}, ${2:S});
+	$3
+snippet db_set_field_width
+	db_set_field_width(${1:S}, ${2:I});
+	$3
+snippet db_set_field_info
+	db_set_field_info(${1:I}, ${2:S}, ${3:S}, ${4:I});
+	$5
+snippet db_set_field_sum_flag
+	db_set_field_sum_flag(${1:S});
+	$2
+snippet db_seek
+	db_seek(${1:S}, ${2:S}, ${3:, ${4:瓆);
+	$5
+snippet db_show
+	db_show(${1:S});
+	$2
+snippet db_show_and_select
+	db_show_and_select(${1:S});
+	$2
+snippet db_show_and_select_as
+	db_show_and_select_as(${1:S});
+	$2
+snippet db_show_and_select_ds
+	db_show_and_select_ds(${1:S});
+	$2
+snippet db_show_and_select_m
+	db_show_and_select_m(${1:S});
+	$2
+snippet db_show_and_select_m_as
+	db_show_and_select_m_as(${1:S});
+	$2
+snippet db_show_and_select_m_ds
+	db_show_and_select_m_ds(${1:S});
+	$2
+snippet db_select_m_copy_res
+	db_select_m_copy_res()
+	$1
+snippet db_select_m_set_val
+	db_select_m_set_val()
+	$1
+snippet db_select_area
+	db_select_area(${1:I});
+	$2
+snippet db_free_area
+	db_free_area(${1:I});
+	$2
+snippet db_free_cur_area
+	db_free_cur_area()
+	$1
+snippet db_get_cur_area
+	db_get_cur_area()
+	$1
+snippet db_select_dbio
+	db_select_dbio(${1:S});
+	$2
+snippet db_serv_type
+	db_serv_type()
+	$1
+snippet db_temp
+	db_temp()
+	$1
+snippet db_func_substr
+	db_func_substr()
+	$1
+snippet db_func_len
+	db_func_len()
+	$1
+snippet db_get_sum
+	db_get_sum(${1:S});
+	$2
+snippet db_set_curr_row_skip_num
+	db_set_curr_row_skip_num()
+	$1
+snippet db_set_row_skip_num
+	db_set_row_skip_num(${1:I});
+	$2
+snippet smtp_set_host
+	smtp_set_host(${1:S});
+	$2
+snippet smtp_set_port
+	smtp_set_port(${1:I});
+	$2
+snippet smtp_set_user
+	smtp_set_user(${1:S});
+	$2
+snippet smtp_set_passwd
+	smtp_set_passwd(${1:S});
+	$2
+snippet smtp_set_sender
+	smtp_set_sender(${1:S}, ${2:S});
+	$3
+snippet smtp_set_subject
+	smtp_set_subject(${1:S});
+	$2
+snippet smtp_set_msg_body
+	smtp_set_msg_body(${1:S});
+	$2
+snippet smtp_attach_file
+	smtp_attach_file(${1:S});
+	$2
+snippet smtp_set_target
+	smtp_set_target(${1:S}, ${2:S});
+	$3
+snippet smtp_add_target
+	smtp_add_target(${1:S}, ${2:S});
+	$3
+snippet smtp_send
+	smtp_send()
+	$1
+snippet nag_clear_base
+	nag_clear_base()
+	$1
+snippet nag_set_bg_color
+	nag_set_bg_color(${1:I});
+	$2
+snippet nag_set_bg_img
+	nag_set_bg_img(${1:S});
+	$2
+snippet nag_group_add
+	nag_group_add(${1:I}, ${2:I}, ${3:S});
+	$4
+snippet nag_group_del
+	nag_group_del(${1:S});
+	$2
+snippet nag_group_set_img_file
+	nag_group_set_img_file(${1:S}, ${2:S});
+	$3
+snippet nag_ico_add
+	nag_ico_add(${1:S}, ${2:I}, ${3:I}, ${4:S}, ${5:S});
+	$6
+snippet nag_ico_del
+	nag_ico_del(${1:S}, ${2:S});
+	$3
+snippet nag_ico_set_img_file
+	nag_ico_set_img_file(${1:S}, ${2:S}, ${3:S});
+	$4
+snippet nag_label_add
+	nag_label_add(${1:S}, ${2:I}, ${3:I}, ${4:S}, ${5:S});
+	$6
+snippet nag_label_del
+	nag_label_del(${1:S}, ${2:S});
+	$3
+snippet nag_line
+	nag_line(${1:S}, ${2:I}, ${3:I}, ${4:I}, ${5:I}, ${6:I}, ${7:I}, ${8:I}, ${9:I});
+	$10
+snippet get_user_id
+	get_user_id()
+	$1
+snippet get_user_name
+	get_user_name()
+	$1
+snippet get_user_emp_id
+	get_user_emp_id()
+	$1
+snippet get_user_dept_id
+	get_user_dept_id()
+	$1
+snippet get_user_attr
+	get_user_attr(${1:S});
+	$2
+snippet is_super_user
+	is_super_user()
+	$1
+snippet sms_send
+	sms_send(${1:S}, ${2:S}, ${3:S}, ${4:S});
+	$5
+snippet is_user_in_group
+	is_user_in_group(${1:S});
+	$2
+snippet get_voucher_file
+	get_voucher_file(${1:I}, ${2:S});
+	$3
+snippet get_voucher_attr
+	get_voucher_attr(${1:I}, ${2:S});
+	$3
+snippet check_a_user_pwd
+	check_a_user_pwd(${1:S}, ${2:S});
+	$3
+snippet have_role
+	have_role(${1:S});
+	$2
+snippet have_any_priv
+	have_any_priv(${1:S});
+	$2
+snippet have_exec_priv
+	have_exec_priv(${1:S});
+	$2
+snippet send_msg
+	send_msg(${1:S}, ${2:S});
+	$3
+snippet send_msg_and_obj
+	send_msg_and_obj(${1:S}, ${2:S}, ${3:S}, ${4:S});
+	$5
+snippet view_app_obj
+	view_app_obj(${1:S}, ${2:S});
+	$3
+snippet view_voucher
+	view_voucher(${1:S});
+	$2
+snippet view_voucher_by_no
+	view_voucher_by_no(${1:S});
+	$2
+snippet get_emp_pict
+	get_emp_pict(${1:S});
+	$2
+snippet get_emp_file
+	get_emp_file(${1:S}, ${2:S});
+	$3
+snippet get_emp_info
+	get_emp_info(${1:S}, ${2:S});
+	$3
+snippet get_emp_desc
+	get_emp_desc(${1:S}, ${2:S});
+	$3
+snippet get_emp_dept_id
+	get_emp_dept_id(${1:S});
+	$2
+snippet get_emp_company_id
+	get_emp_company_id(${1:S});
+	$2
+snippet gen_emp_id
+	gen_emp_id(${1:S}, ${2:I});
+	$3
+snippet wage_get_degree_val
+	wage_get_degree_val(${1:S}, ${2:S});
+	$3
+snippet wage_get_emp_subject_data
+	wage_get_emp_subject_data(${1:S}, ${2:S}, ${3:S});
+	$4
+snippet emp_contract_push_para
+	emp_contract_push_para(${1:S}, ${2:S});
+	$3
+snippet read_id_card
+	read_id_card()
+	$1
+snippet get_res_pict
+	get_res_pict(${1:S});
+	$2
+snippet get_res_file
+	get_res_file(${1:S}, ${2:S});
+	$3
+snippet get_res_info
+	get_res_info(${1:S}, ${2:S});
+	$3
+snippet get_res_desc
+	get_res_desc(${1:S}, ${2:S});
+	$3
+snippet get_res_attr_title
+	get_res_attr_title(${1:S}, ${2:S});
+	$3
+snippet get_res_attr_default_val
+	get_res_attr_default_val(${1:S}, ${2:S});
+	$3
+snippet get_res_factor_num
+	get_res_factor_num(${1:S}, ${2:S});
+	$3
+snippet get_res_num
+	get_res_num(${1:S}, ${2:S});
+	$3
+snippet get_res_ass_num
+	get_res_ass_num(${1:S}, ${2:S});
+	$3
+snippet get_res_num_vir
+	get_res_num_vir(${1:S}, ${2:S});
+	$3
+snippet get_res_ass_num_vir
+	get_res_ass_num_vir(${1:S}, ${2:S});
+	$3
+snippet get_res_cat_full_name
+	get_res_cat_full_name(${1:S});
+	$2
+snippet get_res_cat_full_name_by_res_id
+	get_res_cat_full_name_by_res_id(${1:S});
+	$2
+snippet get_eba_info
+	get_eba_info(${1:S}, ${2:S});
+	$3
+snippet get_eba_file
+	get_eba_file(${1:S}, ${2:S});
+	$3
+snippet get_eba_mem_card_info
+	get_eba_mem_card_info(${1:S}, ${2:S});
+	$3
+snippet get_sup_info
+	get_sup_info(${1:S}, ${2:S});
+	$3
+snippet get_sup_file
+	get_sup_file(${1:S}, ${2:S});
+	$3
+snippet get_eba_attr
+	get_eba_attr(${1:S}, ${2:S});
+	$3
+snippet get_sup_attr
+	get_sup_attr(${1:S}, ${2:S});
+	$3
+snippet get_eba_group_price
+	get_eba_group_price(${1:S}, ${2:S});
+	$3
+snippet get_eba_group_price_ext
+	get_eba_group_price_ext(${1:S}, ${2:S}, ${3:S});
+	$4
+snippet have_eba_group_price
+	have_eba_group_price(${1:S}, ${2:S});
+	$3
+snippet get_res_eba_map_code
+	get_res_eba_map_code(${1:S}, ${2:S});
+	$3
+snippet get_res_eba_map_name
+	get_res_eba_map_name(${1:S}, ${2:S});
+	$3
+snippet vr_create
+	vr_create(${1:S});
+	$2
+snippet get_mio_account_info
+	get_mio_account_info(${1:S}, ${2:S});
+	$3
+snippet get_app_emp_info
+	get_app_emp_info(${1:S}, ${2:S});
+	$3
+snippet get_asset_pict
+	get_asset_pict(${1:S});
+	$2
+snippet get_asset_file
+	get_asset_file(${1:S}, ${2:S});
+	$3
+snippet get_asset_desc
+	get_asset_desc(${1:S}, ${2:S});
+	$3
+snippet get_asset_info
+	get_asset_info(${1:S}, ${2:S});
+	$3
+snippet rep_para_set
+	rep_para_set(${1:S}, ${2:S});
+	$3
+snippet rep_para_get
+	rep_para_get(${1:S});
+	$2
+snippet rep_para_defined
+	rep_para_defined(${1:S});
+	$2
+snippet rep_para_list
+	rep_para_list()
+	$1
+snippet rep_add_group
+	rep_add_group(${1:S});
+	$2
+snippet rep_add_rep
+	rep_add_rep(${1:S}, ${2:S}, ${3:S});
+	$4
+snippet rep_add_csp_rep
+	rep_add_csp_rep(${1:S}, ${2:S}, ${3:S});
+	$4
+snippet rep_del_group
+	rep_del_group(${1:S});
+	$2
+snippet rep_del_rep
+	rep_del_rep(${1:S}, ${2:S});
+	$3
+snippet rep_del_csp_rep
+	rep_del_csp_rep(${1:S}, ${2:S});
+	$3
+snippet rep_para_prepare
+	rep_para_prepare(${1:S}, ${2:S});
+	$3
+snippet def_lmt_dict
+	def_lmt_dict(${1:S}, ${2:S}, ${3:S});
+	$4
+snippet def_lmt_dict_multi
+	def_lmt_dict_multi(${1:S}, ${2:S}, ${3:S});
+	$4
+snippet def_lmt_dict_multi_set
+	def_lmt_dict_multi_set(${1:S}, ${2:S}, ${3:S});
+	$4
+snippet def_lmt_str
+	def_lmt_str(${1:S}, ${2:S});
+	$3
+snippet def_lmt_date
+	def_lmt_date(${1:S}, ${2:S});
+	$3
+snippet def_lmt_month
+	def_lmt_month(${1:S}, ${2:S});
+	$3
+snippet def_lmt_set_val
+	def_lmt_set_val(${1:S}, ${2:S});
+	$3
+snippet lmt_set_checked
+	lmt_set_checked(${1:S});
+	$2
+snippet lmt_set_must_checked
+	lmt_set_must_checked(${1:S});
+	$2
+snippet lmt_set_hide
+	lmt_set_hide(${1:S});
+	$2
+snippet lmt_checked
+	lmt_checked(${1:S});
+	$2
+snippet lmt_val
+	lmt_val(${1:S});
+	$2
+snippet ds_get_from_rep
+	ds_get_from_rep(${1:S});
+	$2
+snippet lmt_add_tab_cond
+	lmt_add_tab_cond(${1:S}, ${2:S});
+	$3
+snippet lmt_clear_tab_cond
+	lmt_clear_tab_cond()
+	$1
